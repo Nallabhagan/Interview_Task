@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sign Up Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<!-- Code Start -->
+	<div class="container" id="app">
+		<div class="row">
+			<div class="col-md-6 box-shadow" style="border-top-right-radius: 8px;border-bottom-right-radius: 8px;">
+				<img class="shape d-block d-sm-none d-md-block d-lg-block" src="assets/images/blob-shape.png">
+				<img class="shape3 d-block d-sm-none d-md-block d-lg-block" src="assets/images/blob-shape3.png">
+				<img class="shape2 d-block d-sm-none d-md-block d-lg-block" src="assets/images/blob-shape2.png">
+				<div class="img d-block d-sm-none d-md-block d-lg-block">
+					<img src="assets/images/cloud.png">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+
+					  <!-- Indicators -->
+					  <ul class="carousel-indicators">
+					    <li data-target="#demo" data-slide-to="0"></li>
+					    <li data-target="#demo" data-slide-to="1" class="active"></li>
+					    <li data-target="#demo" data-slide-to="2"></li>
+					  </ul>
+					  
+					  <!-- The slideshow -->
+					  <div class="carousel-inner">
+					    <div class="carousel-item">
+					      <h3><span class="text-success">Your data</span> will be securely stored in our cloud and will be accessed only by you</h3>
+					    </div>
+					    <div class="carousel-item active">
+					      <h3><span class="text-success">Your data</span> will be securely stored in our cloud and will be accessed only by you</h3>
+					    </div>
+					    <div class="carousel-item">
+					      <h3><span class="text-success">Your data</span> will be securely stored in our cloud and will be accessed only by you</h3>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<main-app></main-app>
+			</div>
+		</div>
+	</div>
+	<!-- Code End -->
+	
+
+	<!-- For Vue Purpose -->
+    <script src="assets/js/vue.js"></script>
+  	<script src="assets/js/httpVueLoader.js"></script>
+  	<script type="text/javascript">
+  		var app = new Vue({
+  		  	el: "#app",
+  		  	components: {
+  		        'main-app': httpVueLoader('components/MainApp.vue'),
+  		    },
+  		});
+  	</script>
+
+  	<!-- For bootstrap purpose -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
