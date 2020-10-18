@@ -45,6 +45,84 @@
 	.font-weight-600 {
 		font-weight: 600;
 	}
+	
+	.login-content{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 5rem 0px 0px 0px;
+	}
+	.login-content form{
+		width: 360px;
+		margin: 0 auto;
+		display: block;
+	}
+	.login-content h2{
+		text-align: center;
+		font-weight: 400;
+	}
+	.login-content h2 span{
+		color: #1b9b86;
+	}
+	.input-group-addon i{
+		cursor: pointer;
+	}
+	.btn-success{
+		background-color: #1b9b86 !important;
+		border-color: #1b9b86!important;
+		font-weight: 500;
+		cursor: pointer;
+	}
+	.separator-item {
+	    width: 100%;
+	    display: block;
+	    text-align: center;
+	    position: relative;
+	    width: 100%;
+	    margin: 36px 0 22px 0;
+	    height: 1px;
+	}
+	.separator-item:before {
+	    width: 100%;
+	    content: "";
+	    height: 1px;
+	    display: block;
+	    background-color: #e0e0e0;
+	    position: absolute;
+	    top: 0;
+	}
+	.separator-item span {
+	    background-color: #fff;
+	    position: absolute;
+	    top: -16px;
+	    margin-left: -17px;
+	    padding: 4px;
+	    color: #808080;
+	    border: 1px solid #e0e0e0;
+	    width: 32px;
+	    height: 32px;
+	    border-radius: 30px;
+	    line-height: 22px;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	    font-weight: 700;
+	}
+	.social-login-buttons-block {
+	    width: 50%;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+
+	.social-login-buttons-block a:last-child {
+	    margin-right: 0;
+	}
+	.social-login-buttons-block a {
+	    color: #fff!important;
+	    margin-right: 20px;
+	}
+	.social-login-buttons-block a img{
+		width: 25%;
+	}
 </style>
 
 <script type="text/javascript">
